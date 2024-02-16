@@ -6,7 +6,7 @@ import time
 import subprocess
 
 # Initialize the OBD connection
-connection = obd.OBD()
+connection = obd.OBD(baudrate=115000)
 
 # GPIO pin for shutdown signal
 SHUTDOWN_PIN = 3
